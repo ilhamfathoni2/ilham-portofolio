@@ -34,7 +34,7 @@ export const About = () => {
             Indonesia, I finally got the opportunity to work for an IT Solution
             company, a company that has only been established for about 7 years.
             My main focus is as a mobile and web application developer for
-            various clients
+            various clients.
           </p>
           <br />
           <p className="mb-1">
