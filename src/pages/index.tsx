@@ -1,8 +1,8 @@
 import Head from "next/head";
-import { Navbar } from "./navbar/navbar";
-import { SectionOne } from "./home/sectionOne";
-import { About } from "./home/about";
-import { Socemed } from "./home/socemed";
+import { Navbar } from "@/components/navbar/navbar";
+import { SectionOne } from "@/components/home/sectionOne";
+import { About } from "@/components/home/about";
+import { Socemed } from "@/components/home/socemed";
 
 
 export default function Home() {  
