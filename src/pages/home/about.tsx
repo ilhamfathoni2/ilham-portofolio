@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "next/image";
 import { rightIcon } from "../../../public/assets/vector";
 import { imgProfile } from "../../../public/assets/img";
