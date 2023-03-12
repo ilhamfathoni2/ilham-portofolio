@@ -25,7 +25,7 @@ export const SectionOne = () => {
   };
 
   return (
-    <div className="hero-1 pl-[232px] pr-[60px] mt-[150px]">
+    <div id="hero-section" className="hero-1 pl-[232px] pr-[60px] mt-[150px]">
       <div>
         <h6 className="text-primaryBlue text-[18px] font-medium p-0 mb-[20px]">
           Hi, my name is
