@@ -4,8 +4,7 @@ import { SectionOne } from "@/components/home/sectionOne";
 import { About } from "@/components/home/about";
 import { Socemed } from "@/components/home/socemed";
 
-
-export default function Home() {  
+export default function Home() {
   return (
     <>
       <Head>

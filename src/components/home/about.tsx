@@ -5,15 +5,24 @@ import { imgProfile } from "../../../public/assets/img";
 
 export const About = () => {
   return (
-    <div id="about-section" className="flex justify-between pl-[232px] pr-[98px] mt-[100px] mb-[20px]">
+    <div
+      id="about-section"
+      className="pl-7 pr-7 lg:flex lg:justify-between lg:pl-[232px] lg:pr-[98px] mt-[170px] lg:mt-[100px] xl:mt-[100px] 2xl:mt-[100px] mb-[20px]"
+    >
       <div>
-        <Image src={imgProfile} alt="profile" width={350} quality={100} className="mt-[70px]" />
+        <Image
+          src={imgProfile}
+          alt="profile"
+          width={350}
+          quality={100}
+          className="mt-[70px] hidden lg:inline"
+        />
       </div>
       <div>
         <h1 className="text-textPrimary text-[20px] font-bold p-0 mb-8">
           About Me
         </h1>
-        <div className="text-textSecondary text-[18px] mb-5 lg:w-[680px] p-0">
+        <div className="text-textSecondary text-[16px] lg:text-[18px] mb-5 lg:w-[680px] p-0">
           <p className="mb-1">
             Hello! My name is Ilham and I love building solid, scalable frontend
             products with great user experiences. My interest in frontend
@@ -44,31 +53,82 @@ export const About = () => {
         <div className="flex justify-between lg:w-[400px]">
           <div>
             <h6 className="flex items-center mb-2 text-textSecondary text-[13px]">
-              <Image src={rightIcon} alt="icon-right" width={7} className="mr-4" /> JavaScript
+              <Image
+                src={rightIcon}
+                alt="icon-right"
+                width={7}
+                className="mr-4"
+              />{" "}
+              JavaScript
             </h6>
             <h6 className="flex items-center mb-2 text-textSecondary text-[14px]">
-              <Image src={rightIcon} alt="icon-right" width={7} className="mr-4" /> React.js
+              <Image
+                src={rightIcon}
+                alt="icon-right"
+                width={7}
+                className="mr-4"
+              />{" "}
+              React.js
             </h6>
             <h6 className="flex items-center mb-2 text-textSecondary text-[14px]">
-              <Image src={rightIcon} alt="icon-right" width={7} className="mr-4" /> React Native
+              <Image
+                src={rightIcon}
+                alt="icon-right"
+                width={7}
+                className="mr-4"
+              />{" "}
+              React Native
             </h6>
           </div>
           <div>
             <h6 className="flex items-center mb-2 text-textSecondary text-[14px]">
-              <Image src={rightIcon} alt="icon-right" width={7} className="mr-4" /> Next.js
+              <Image
+                src={rightIcon}
+                alt="icon-right"
+                width={7}
+                className="mr-4"
+              />{" "}
+              Next.js
             </h6>
             <h6 className="flex items-center mb-2 text-textSecondary text-[14px]">
-              <Image src={rightIcon} alt="icon-right" width={7} className="mr-4" /> Express.js
+              <Image
+                src={rightIcon}
+                alt="icon-right"
+                width={7}
+                className="mr-4"
+              />{" "}
+              Express.js
             </h6>
             <h6 className="flex items-center mb-2 text-textSecondary text-[14px]">
-              <Image src={rightIcon} alt="icon-right" width={7} className="mr-4" /> Node.js
+              <Image
+                src={rightIcon}
+                alt="icon-right"
+                width={7}
+                className="mr-4"
+              />{" "}
+              Node.js
             </h6>
           </div>
           <div>
             <h6 className="flex items-center mb-2 text-textSecondary text-[14px]">
-              <Image src={rightIcon} alt="icon-right" width={7} className="mr-4" /> TypeScript
+              <Image
+                src={rightIcon}
+                alt="icon-right"
+                width={7}
+                className="mr-4"
+              />{" "}
+              TypeScript
             </h6>
           </div>
+        </div>
+        <div className="flex flex-col items-center">
+          <Image
+            src={imgProfile}
+            alt="profile"
+            width={250}
+            quality={100}
+            className="mt-[70px] md:hidden lg:hidden xl:hidden 2xl:hidden"
+          />
         </div>
       </div>
     </div>

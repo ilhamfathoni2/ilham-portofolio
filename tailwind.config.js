@@ -17,11 +17,12 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       bgPrimary: '#081731',
+      bgDark: '#000A1B',
       white: '#ffffff',
       primaryBlue: '#00D8FF',
       textPrimary: '#CCD4F9',
       textSecondary: '#8890B3',
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
