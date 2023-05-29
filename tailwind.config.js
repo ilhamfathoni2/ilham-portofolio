@@ -24,5 +24,5 @@ module.exports = {
       textSecondary: '#8890B3',
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [],
 }

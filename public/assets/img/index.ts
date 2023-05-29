@@ -5,6 +5,9 @@ import iconReactNative from "./icon-react-native.png";
 import iconNodeJs from "./icon-nodejs.png";
 import bgReadOrange from "./bg-rrr.png";
 import imgProfile from "./profile.png";
+import imgExperience from "./experience.png";
+import logoAlfamind from "./alfamind.png";
+import logoDaikin from "./daikin.png";
 
 export {
   imgProfile,
@@ -14,4 +17,7 @@ export {
   iconReactNative,
   iconNodeJs,
   bgReadOrange,
+  imgExperience,
+  logoAlfamind,
+  logoDaikin
 };
