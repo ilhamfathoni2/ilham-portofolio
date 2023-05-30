@@ -36,7 +36,7 @@ export const Portofolio = () => {
           {posts.map((post) => (
             <div
               key={post.id}
-              className="relative isolate flex flex-col gap-8 lg:flex-row justify-between rounded-xl hover:bg-white/5 p-6 hover:ring-1 hover:ring-inset hover:ring-white/10"
+              className="relative isolate flex flex-col gap-8 lg:flex-row justify-between rounded-xl bg-bgPrimary p-6 ring-1 ring-inset ring-white/10 hover:bg-white/5"
             >
               <div className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-[2/1] lg:w-[350px] lg:shrink-0">
                 <Image
