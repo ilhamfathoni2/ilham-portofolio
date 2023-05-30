@@ -72,7 +72,7 @@ export const Experience = () => {
   return (
     <div
       id="experience-section"
-      className="pl-7 pr-7 lg:flex lg:justify-between lg:pl-[232px] lg:pr-[98px] mt-[170px] lg:mt-[100px] xl:mt-[100px] 2xl:mt-[100px] mb-[50px] items-center"
+      className="pl-7 pr-7 lg:flex lg:justify-between lg:pl-[232px] lg:pr-[98px] mt-[170px] lg:mt-[100px] xl:mt-[100px] 2xl:mt-[100px] mb-[50px]"
     >
       <div className="block lg:hidden mb-12">
         <Image
