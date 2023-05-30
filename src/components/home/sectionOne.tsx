@@ -54,7 +54,7 @@ export const SectionOne = () => {
           onClick={handleAbout}
           className="rounded-full"
         >
-          <ChevronDoubleDownIcon className="w-9 text-primaryBlue animate-bounce" />
+          <ChevronDoubleDownIcon className="w-14 text-primaryBlue animate-bounce" />
         </button>
       </div>
     </div>
