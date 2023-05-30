@@ -10,7 +10,7 @@ import {
 export const Footer = () => {
   return (
     <div className="block md:hidden lg:hidden xl:hidden 2xl:hidden">
-      <div className="flex justify-center gap-5 bottom-0 w-full pl-[7px] pr-[7px] z-[1000000] bg-bgPrimary mb-[50px]">
+      <div className="flex justify-center items-center gap-5 bottom-0 w-full pl-[7px] pr-[7px] z-[1000000] bg-bgPrimary mb-[50px]">
         <Link href="https://github.com/ilhamfathoni2" target="_blank">
           <Image
             src={githubIcon}
