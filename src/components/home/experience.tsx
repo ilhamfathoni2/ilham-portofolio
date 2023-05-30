@@ -5,6 +5,7 @@ import {
   logoAlfamind,
   logoDaikin,
 } from "../../../public/assets/img";
+import { LinkIcon } from "@heroicons/react/24/outline";
 
 const experienceData = [
   {
@@ -99,8 +100,11 @@ export const Experience = () => {
                   <div key={index}>
                     <h4 className="mt-3 text-[15px] font-medium text-textPrimary hover:text-primaryBlue cursor-pointer">
                       {item.link ? (
-                        <a href={item.link}>
-                          PROJECT - <b>{item.project}</b>
+                        <a href={item.link} className="flex gap-4">
+                          <div>
+                            PROJECT - <b>{item.project}</b>
+                          </div>
+                          <LinkIcon className="w-4" />
                         </a>
                       ) : (
                         <a>
