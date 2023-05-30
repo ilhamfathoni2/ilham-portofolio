@@ -13,8 +13,20 @@ const experienceData = [
       {
         project: "Alfamind",
         year: "Jan 2022 - Present",
-        position: "Mobile Developer",
+        position: "Frontend Developer",
         link: "https://play.google.com/store/apps/details?id=id.meteor.alfamind&hl=en&gl=US",
+        stacks: [
+          "React Native",
+          "React.js",
+          "Redux",
+          "RestAPI",
+          "Axios",
+          "CodePush",
+          "Firebase",
+          "React Native Paper",
+          "Bootstrap",
+          "JavaScript",
+        ],
         description:
           "Main tasks, writing and developing program code, testing tasks that have been completed, fixing bugs, working with the team to find solutions to problems, collaborating with other teams/divisions to understand the needs needed.",
       },
@@ -23,6 +35,18 @@ const experienceData = [
         year: "Dec 2022 - Present",
         position: "Frontend Developer",
         link: "",
+        stacks: [
+          "React Native",
+          "Next.js",
+          "Zustand",
+          "RestAPI",
+          "Axios",
+          "CodePush",
+          "Firebase",
+          "Native Base",
+          "tailwindcss",
+          "TypeScript",
+        ],
         description:
           "Main tasks, writing and developing program code, testing tasks that have been completed, fixing bugs, working with the team to find solutions to problems, collaborating with other teams/divisions to understand the needs needed.",
       },
@@ -36,6 +60,7 @@ const experienceData = [
         year: "Jun 2021 - Okt 2021",
         position: "Internship Laravel Developer",
         link: "",
+        stacks: ["Laravel 8", "SQL", "Bootstrap"],
         description:
           "Create a web to manage internship registration and active internship data management",
       },
@@ -49,14 +74,26 @@ export const Experience = () => {
       id="experience-section"
       className="pl-7 pr-7 lg:flex lg:justify-between lg:pl-[232px] lg:pr-[98px] mt-[170px] lg:mt-[100px] xl:mt-[100px] 2xl:mt-[100px] mb-[50px] items-center"
     >
+      <div className="block lg:hidden mb-12">
+        <Image
+          src={imgExperience}
+          alt="experience"
+          width={350}
+          quality={100}
+          className="mt-[65px]"
+        />
+      </div>
       <div>
         <h1 className="text-textPrimary text-[20px] font-bold p-0">
           Experience
         </h1>
         <div className="mx-auto mt-8 grid max-w-lg gap-6 lg:gap-8">
-          <div className="rounded-xl bg-white/5 p-6 ring-1 ring-inset ring-white/10">
-            {experienceData.map((comp, index) => (
-              <div key={index} className="text-base leading-7 mb-4">
+          {experienceData.map((comp, index) => (
+            <div
+              key={index}
+              className="rounded-xl bg-white/5 p-6 ring-1 ring-inset ring-white/10"
+            >
+              <div className="text-base leading-7 mb-4">
                 <h3 className="font-semibold text-white">{comp.company}</h3>
                 {comp.data.map((item, index) => (
                   <div key={index}>
@@ -74,14 +111,24 @@ export const Experience = () => {
                     <h4 className="text-[14px] font-medium text-textSecondary">
                       {item.position} | {item.year}
                     </h4>
-                    <div className="mt-3 text-textSecondary mb-4">
+                    <div className="mt-2 text-textSecondary mb-2">
                       {item.description}
+                    </div>
+                    <div className="flex flex-wrap mb-4">
+                      {item.stacks.map((stack, index) => (
+                        <h4
+                          key={index}
+                          className="text-[13px] border-[1px] pl-2 pr-2 pt-0 pb-0 rounded-md text-textPrimary mr-5 mb-3"
+                        >
+                          {stack}
+                        </h4>
+                      ))}
                     </div>
                   </div>
                 ))}
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
       <div>

@@ -52,9 +52,8 @@ export const SectionOne = () => {
         </p>
         <button
           onClick={handleAbout}
-          className="flex justify-center items-center hover:bg-[#16385B] text-primaryBlue rounded-[50px]"
         >
-          <ChevronDoubleDownIcon className="w-9" />
+          <ChevronDoubleDownIcon className="w-9 text-primaryBlue animate-bounce" />
         </button>
       </div>
     </div>
