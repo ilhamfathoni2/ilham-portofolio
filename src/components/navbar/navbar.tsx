@@ -5,8 +5,8 @@ import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "About", href: "#about-section", current: false },
-  { name: "Experience", href: "#experience-section", current: false },
+  { name: "About", href: "about-section", current: false },
+  { name: "Experience", href: "experience-section", current: false },
   { name: "Portofolio", href: "#", current: false },
   { name: "Contact", href: "#", current: false },
 ];
@@ -16,6 +16,13 @@ function classNames(...classes: string[]) {
 }
 
 export const Navbar = () => {
+  const scrollEvent = (event: string) => {
+    const element = document.getElementById(event);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const scrollHero = () => {
     const element = document.getElementById("hero-section");
     if (element) {
@@ -31,7 +38,7 @@ export const Navbar = () => {
   return (
     <Disclosure
       as="nav"
-      className="fixed top-0 left-0 right-0 bg-bgPrimary p-[20px] z-[1000000]"
+      className="fixed top-0 left-0 right-0 bg-bgPrimary p-[2px] z-[1000000]"
     >
       {({ open }) => (
         <>
@@ -65,19 +72,19 @@ export const Navbar = () => {
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <a
+                      <button
                         key={item.name}
-                        href={item.href}
+                        onClick={() => scrollEvent(item.href)}
                         className={classNames(
                           item.current
-                            ? "bg-gray-900 text-white"
+                            ? "bg-gray-900 text-white cursor-pointer"
                             : "hover:text-primaryBlue text-textPrimary",
-                          "rounded-md px-3 py-2 text-sm font-medium"
+                          "rounded-md px-3 py-2 text-sm font-medium cursor-pointer"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
-                      </a>
+                      </button>
                     ))}
                     <button
                       onClick={openPDF}
@@ -103,20 +110,19 @@ export const Navbar = () => {
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item) => (
-                <Disclosure.Button
+                <button
                   key={item.name}
-                  as="a"
-                  href={item.href}
+                  onClick={() => scrollEvent(item.href)}
                   className={classNames(
                     item.current
-                      ? "bg-gray-900 text-white"
+                      ? "bg-gray-900 text-white cursor-pointer"
                       : "hover:text-primaryBlue text-textPrimary",
-                    "block rounded-md px-3 py-2 text-base font-medium"
+                    "block rounded-md px-3 py-2 text-base font-medium cursor-pointer"
                   )}
                   aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
-                </Disclosure.Button>
+                </button>
               ))}
               <button
                 onClick={openPDF}

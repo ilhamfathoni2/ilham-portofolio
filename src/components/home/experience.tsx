@@ -11,9 +11,9 @@ const experienceData = [
     company: "PT Meteor Inovasi Digital",
     data: [
       {
-        project: "Alfamind",
-        year: "Jan 2022 - Present",
-        position: "Frontend Developer",
+        project: "Alfamind (Alfamart)",
+        year: "JAN 2022 - PRESENT",
+        position: "FRONTEND DEVELOPER",
         link: "https://play.google.com/store/apps/details?id=id.meteor.alfamind&hl=en&gl=US",
         stacks: [
           "React Native",
@@ -32,8 +32,8 @@ const experienceData = [
       },
       {
         project: "Daikin",
-        year: "Dec 2022 - Present",
-        position: "Frontend Developer",
+        year: "DEC 2022 - PRESENT",
+        position: "FRONTEND DEVELOPER",
         link: "",
         stacks: [
           "React Native",
@@ -57,10 +57,10 @@ const experienceData = [
     data: [
       {
         project: "Web PAL Internship",
-        year: "Jun 2021 - Okt 2021",
+        year: "JUN 2021 - OKT 2021",
         position: "Internship Laravel Developer",
         link: "",
-        stacks: ["Laravel 8", "SQL", "Bootstrap"],
+        stacks: ["Laravel 8", "MySQL", "Bootstrap", "HTML", "CSS"],
         description:
           "Create a web to manage internship registration and active internship data management",
       },
@@ -93,35 +93,38 @@ export const Experience = () => {
               key={index}
               className="rounded-xl bg-white/5 p-6 ring-1 ring-inset ring-white/10"
             >
-              <div className="text-base leading-7 mb-4">
+              <div className="text-base leading-5 mb-4">
                 <h3 className="font-semibold text-white">{comp.company}</h3>
                 {comp.data.map((item, index) => (
                   <div key={index}>
-                    <h4 className="mt-3 text-[14px] font-medium text-textPrimary hover:text-primaryBlue cursor-pointer">
+                    <h4 className="mt-3 text-[15px] font-medium text-textPrimary hover:text-primaryBlue cursor-pointer">
                       {item.link ? (
                         <a href={item.link}>
-                          <b>Project - {item.project}</b>
+                          PROJECT - <b>{item.project}</b>
                         </a>
                       ) : (
                         <a>
-                          <b>Project - {item.project}</b>
+                          PROJECT - <b>{item.project}</b>
                         </a>
                       )}
                     </h4>
-                    <h4 className="text-[14px] font-medium text-textSecondary">
-                      {item.position} | {item.year}
+                    <h4 className="text-[12px] font-semibold text-textSecondary">
+                      {item.position}
                     </h4>
-                    <div className="mt-2 text-textSecondary mb-2">
+                    <p className="text-[12px] font-medium text-textSecondary">
+                      {item.year}
+                    </p>
+                    <div className="text-[14px] mt-1 text-textSecondary mb-2">
                       {item.description}
                     </div>
                     <div className="flex flex-wrap mb-4">
                       {item.stacks.map((stack, index) => (
-                        <h4
+                        <h5
                           key={index}
-                          className="text-[13px] border-[1px] pl-2 pr-2 pt-0 pb-0 rounded-md text-textPrimary mr-5 mb-3"
+                          className="text-[12px] border-[1px] pl-2 pr-2 pt-0 pb-0 rounded-full text-textSecondary mr-2 mb-2"
                         >
                           {stack}
-                        </h4>
+                        </h5>
                       ))}
                     </div>
                   </div>
