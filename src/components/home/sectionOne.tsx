@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import Image from "next/image";
 import { rightIcon } from "../../../public/assets/vector";
 import gsap, { Back } from "gsap";
+import { ChevronDoubleDownIcon } from '@heroicons/react/24/outline'
 
 export const SectionOne = () => {
   useEffect(() => {
@@ -31,7 +32,7 @@ export const SectionOne = () => {
   return (
     <div
       id="hero-section"
-      className="hero-1 pl-7 lg:pl-[232px] lg:pr-[60px] mt-[150px]"
+      className="hero-1 pl-7 pr-7 lg:pl-[232px] lg:pr-[60px] mt-[150px]"
     >
       <div>
         <h6 className="text-primaryBlue text-[16px] lg:text-[18px] xl:text-[18px] 2xl:text-[18px] font-medium p-0 mb-[20px]">
@@ -51,10 +52,9 @@ export const SectionOne = () => {
         </p>
         <button
           onClick={handleAbout}
-          className="flex justify-between items-center hover:bg-[#16385B] border-primaryBlue border-[2px] text-primaryBlue pt-2 pb-2 pl-[20px] pr-[20px] rounded-[4px] mt-10 w-[100px]"
+          className="flex justify-center items-center hover:bg-[#16385B] text-primaryBlue rounded-[50px]"
         >
-          Next
-          <Image src={rightIcon} alt="icon-right" width={7} />
+          <ChevronDoubleDownIcon className="w-9" />
         </button>
       </div>
     </div>

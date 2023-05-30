@@ -56,7 +56,7 @@ export const Experience = () => {
         <div className="mx-auto mt-8 grid max-w-lg gap-6 lg:gap-8">
           <div className="rounded-xl bg-white/5 p-6 ring-1 ring-inset ring-white/10">
             {experienceData.map((comp, index) => (
-              <div key={index} className="text-base leading-7 mb-5">
+              <div key={index} className="text-base leading-7 mb-4">
                 <h3 className="font-semibold text-white">{comp.company}</h3>
                 {comp.data.map((item, index) => (
                   <div key={index}>
@@ -74,7 +74,7 @@ export const Experience = () => {
                     <h4 className="text-[14px] font-medium text-textSecondary">
                       {item.position} | {item.year}
                     </h4>
-                    <div className="mt-4 text-textSecondary mb-4">
+                    <div className="mt-3 text-textSecondary mb-4">
                       {item.description}
                     </div>
                   </div>

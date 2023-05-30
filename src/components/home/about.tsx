@@ -15,7 +15,7 @@ export const About = () => {
           alt="profile"
           width={350}
           quality={100}
-          className="mt-[70px] hidden lg:inline"
+          className="mt-[70px] mb-12"
         />
       </div>
       <div>
@@ -120,15 +120,6 @@ export const About = () => {
               TypeScript
             </h6>
           </div>
-        </div>
-        <div className="flex flex-col items-center">
-          <Image
-            src={imgProfile}
-            alt="profile"
-            width={250}
-            quality={100}
-            className="mt-[70px] md:hidden lg:hidden xl:hidden 2xl:hidden"
-          />
         </div>
       </div>
     </div>
