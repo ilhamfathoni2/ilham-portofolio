@@ -8,6 +8,8 @@ import imgProfile from "./profile.png";
 import imgExperience from "./experience.png";
 import logoAlfamind from "./alfamind.png";
 import logoDaikin from "./daikin.png";
+import ptgss from "./pt-gss.png";
+import jhonkey from "./jhonkey.png";
 
 export {
   imgProfile,
@@ -19,5 +21,7 @@ export {
   bgReadOrange,
   imgExperience,
   logoAlfamind,
-  logoDaikin
+  logoDaikin,
+  ptgss,
+  jhonkey,
 };
