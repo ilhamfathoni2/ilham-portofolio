@@ -51,6 +51,23 @@ const experienceData = [
         description:
           "Main tasks, writing and developing program code, testing tasks that have been completed, fixing bugs, working with the team to find solutions to problems, collaborating with other teams/divisions to understand the needs needed.",
       },
+      {
+        project: "Boilerplate Next.Js",
+        year: "JUN 2023 - JUL 2023",
+        position: "FRONTEND DEVELOPER",
+        link: "",
+        stacks: [
+          "Next.js",
+          "Zustand",
+          "RestAPI",
+          "Axios",
+          "tailwindcss",
+          "daisyUi",
+          "TypeScript",
+        ],
+        description:
+          "Standardize Theming DaisyUi, Management state with zustand, Standardize zustand persist with cookie, Make component with tailwind & daisyUi, Feature switch env if run project, etc.",
+      },
     ],
   },
   {

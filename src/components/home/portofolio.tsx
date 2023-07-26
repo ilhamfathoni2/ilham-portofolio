@@ -1,27 +1,14 @@
-import Image from "next/image";
-import { ptgss, jhonkey } from "../../../public/assets/img";
 import { LinkIcon } from '@heroicons/react/24/outline'
 
 const posts = [
   {
     id: 1,
-    title: "PT Global Solusindo",
-    href: "https://ptgss.com/",
-    description:
-      "PT GLOBAL SOLUSINDO SAKTI is able to provide Mechanical and Electrical support in the design, build, construct, supply, install, and upgrade of Electro-Mechanical Systems & Networks",
-    imageUrl: ptgss,
-    stacks: ["Next.js", "tailwindcss", "daisyui", "HTML"],
+    title: "Boilerplate React.Js",
+    href: "https://boilerplate-reactjs.vercel.app/",
+    description: "a comprehensive starter template designed to accelerate your React project development. This boilerplate comes packed with essential features to streamline your workflow, providing you with a solid foundation to build powerful and visually appealing applications.",
+    imageUrl: 'https://raw.githubusercontent.com/ilhamfathoni2/boilerplate-reactjs/master/src/assets/image/dressId.png',
+    stacks: ["React.Js", "tailwindcss", "daisyUi", "TypeScript", "JavaScript", 'Redux', 'Redux Persist', 'Axios', 'Formik', 'Yup'],
   },
-  {
-    id: 1,
-    title: "Jhonkey",
-    href: "https://jhonkey.com/",
-    description:
-      "Web that offers 24-hour call service for locksmiths for cars, motorbikes, doors, safes, immobilizers and others.",
-    imageUrl: jhonkey,
-    stacks: ["Next.js", "tailwindcss", "daisyui", "HTML"],
-  },
-  // More posts...
 ];
 
 export const Portofolio = () => {
@@ -39,11 +26,9 @@ export const Portofolio = () => {
               className="relative isolate flex flex-col gap-8 lg:flex-row justify-between rounded-xl bg-bgPrimary p-6 ring-1 ring-inset ring-white/10 hover:bg-white/5"
             >
               <div className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-[2/1] lg:w-[350px] lg:shrink-0">
-                <Image
+                <img
                   src={post.imageUrl}
-                  alt="PT GSS"
-                  width={880}
-                  quality={100}
+                  alt="Image"
                   className="absolute inset-0 h-full w-full rounded-[6px] object-cover"
                 />
                 <div className="absolute inset-0 rounded-[6px] ring-1 ring-inset ring-gray-900/10" />
