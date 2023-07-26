@@ -45,12 +45,7 @@ export const SectionOne = () => {
           Frontend Developer.
         </h1>
         <p className="text-textSecondary text-[16px] lg:text-[18px] xl:text-[18px] 2xl:text-[18px] mt-3 mb-9 lg:w-[500px] pr-7">
-          With over 1 year and 7 months of experience as a frontend developer, I
-          possess expertise in creating captivating mobile apps and websites. I
-          am always driven to find innovative solutions to every challenge while
-          adhering to the DRY (Don't Repeat Yourself) principle. Proficient in
-          React Native, React.js, Next.js, Node.js, Redux, Zustand, Firebase,
-          and Tailwind, I bring a wide range of skills to the table.
+          With over 1 year and 7 months of experience as a frontend developer, I possess expertise in creating captivating mobile apps and websites. I am always driven to find innovative solutions to every challenge while adhering to the DRY (Don't Repeat Yourself) principle. Proficient in React Native, React.js, Next.js, Node.js, Redux, Zustand, Firebase, and Tailwind, I bring a wide range of skills to the table.
         </p>
         <button onClick={handleAbout} className="rounded-full">
           <ChevronDoubleDownIcon className="w-14 text-primaryBlue animate-bounce" />
