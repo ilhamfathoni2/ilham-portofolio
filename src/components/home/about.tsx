@@ -36,7 +36,7 @@ export const About = () => {
           </p>
           <br />
           <p className="mb-1">
-            Here are some of the technologies I&apos;ve been using recently:
+            Here are some of the technologies I&lsquo;ve been using recently:
           </p>
         </div>
         <div className="flex justify-between lg:w-[400px]">
