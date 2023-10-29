@@ -10,9 +10,10 @@ import { LinkIcon } from "@heroicons/react/24/outline";
 const experienceData = [
   {
     company: "PT Meteor Inovasi Digital",
+    year: "JAN 2022 - PRESENT",
     data: [
       {
-        project: "Alfamind (Alfamart)",
+        project: "Alfamind",
         year: "JAN 2022 - PRESENT",
         position: "FRONTEND DEVELOPER",
         link: "https://play.google.com/store/apps/details?id=id.meteor.alfamind&hl=en&gl=US",
@@ -29,7 +30,7 @@ const experienceData = [
           "JavaScript",
         ],
         description:
-          "Main tasks, writing and developing program code, testing tasks that have been completed, fixing bugs, working with the team to find solutions to problems, collaborating with other teams/divisions to understand the needs needed.",
+          "Integrate the frontend and backend, incorporate Alfagift into Alfamind for grocery products, develop a feature to handle push notifications in the CMS Alfamind, integrate React Native Firebase for receiving notifications on the mobile apps, slice the UI design into the app, and perform bug fixing and maintenance, among other tasks.",
       },
       {
         project: "Daikin",
@@ -66,12 +67,13 @@ const experienceData = [
           "TypeScript",
         ],
         description:
-          "Standardize Theming DaisyUi, Management state with zustand, Standardize zustand persist with cookie, Make component with tailwind & daisyUi, Feature switch env if run project, etc.",
+          "Create a Next.js boilerplate, standardize DaisyUI theming, manage state using Zustand, standardize Zustand persistence with cookies, develop various ready-to-use components with Tailwind and DaisyUI, and include a feature to switch environments when running the project, among other tasks.",
       },
     ],
   },
   {
     company: "PT PAL Indonesia",
+    year: "JUN 2021 - OKT 2021",
     data: [
       {
         project: "Web PAL Internship",
@@ -80,7 +82,7 @@ const experienceData = [
         link: "",
         stacks: ["Laravel 8", "MySQL", "Bootstrap", "HTML", "CSS"],
         description:
-          "Create a web to manage internship registration and active internship data management",
+          "Develop a web application for managing internship registrations and internship data. Design the layout using Bootstrap. Implement a feature for managing internship certificates on the web application.",
       },
     ],
   },
@@ -113,6 +115,7 @@ export const Experience = () => {
             >
               <div className="text-base leading-5 mb-4">
                 <h3 className="font-semibold text-white">{comp.company}</h3>
+                <h5 className="font-semibold text-white my-3 text-[15px]">{comp.year}</h5>
                 {comp.data.map((item, index) => (
                   <div key={index}>
                     <h4 className="mt-3 text-[15px] font-medium text-textPrimary hover:text-primaryBlue cursor-pointer">
@@ -132,9 +135,9 @@ export const Experience = () => {
                     <h4 className="text-[12px] font-semibold text-textSecondary">
                       {item.position}
                     </h4>
-                    <p className="text-[12px] font-medium text-textSecondary">
+                    {/* <p className="text-[12px] font-medium text-textSecondary">
                       {item.year}
-                    </p>
+                    </p> */}
                     <div className="text-[14px] mt-1 text-textSecondary mb-2">
                       {item.description}
                     </div>

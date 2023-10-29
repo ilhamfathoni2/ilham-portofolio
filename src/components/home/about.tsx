@@ -24,26 +24,15 @@ export const About = () => {
         </h1>
         <div className="text-textSecondary text-[16px] lg:text-[18px] mb-5 lg:w-[680px] p-0">
           <p className="mb-1">
-            Hello! My name is Ilham and I love building solid, scalable frontend
-            products with great user experiences. My interest in frontend
-            development started in 2020 when I decided to try basic web
-            programming job training from the government, where I was taught a
-            lot about HTML, CSS, PHP & MySql.
+          I am a frontend developer based in Indonesia, and I take great pleasure in building robust frontend products that can scale with an exceptional user experience.
           </p>
           <br />
           <p className="mb-1">
-            From previous experience, I was finally nterested in working as a
-            frontend developer, then in 2021 I decided to take part in the
-            Full-Stack Developer Bootcamp at PT DumbWays Indonesia to improve my
-            skills and get a job as a developer.
+          My career in frontend development began at a startup company in Tangerang, where I honed my skills in developing complex mobile and web applications, especially for e-commerce and other applications. Using JavaScript frameworks like React and Next for mobile and web development has always piqued my interest. I believe that designing solutions for mobile and web development is a challenge to be embraced, and I enjoy exploring new approaches to tackle it.
           </p>
           <br />
           <p className="mb-1">
-            After 3 months of Full-Stack Developer training at PT DumbWays
-            Indonesia, I finally got the opportunity to work for an IT Solution
-            company, a company that has only been established for about 7 years.
-            My main focus is as a mobile and web application developer for
-            various clients.
+          Currently, I am continuously enhancing my skills in frontend, particularly in React.js, React Native, Next.js, and Flutter. Over time, I've realized the limitations when developing mobile applications with these frameworks, which is why I am committed to expanding my expertise by understanding and utilizing low-level core infrastructures like Java, Kotlin, and C++. I aim to gain the ability to solve problems and interact with their underlying structures.
           </p>
           <br />
           <p className="mb-1">
@@ -118,6 +107,15 @@ export const About = () => {
                 className="mr-4"
               />{" "}
               TypeScript
+            </h6>
+            <h6 className="flex items-center mb-2 text-textSecondary text-[14px]">
+              <Image
+                src={rightIcon}
+                alt="icon-right"
+                width={7}
+                className="mr-4"
+              />{" "}
+              Flutter
             </h6>
           </div>
         </div>
