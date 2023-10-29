@@ -115,7 +115,7 @@ export const Experience = () => {
             >
               <div className="text-base leading-5 mb-4">
                 <h3 className="font-semibold text-white">{comp.company}</h3>
-                <h5 className="font-semibold text-white my-3 text-[15px]">{comp.year}</h5>
+                <h5 className="font-semibold text-white my-2 text-[14px]">{comp.year}</h5>
                 {comp.data.map((item, index) => (
                   <div key={index}>
                     <h4 className="mt-3 text-[15px] font-medium text-textPrimary hover:text-primaryBlue cursor-pointer">
